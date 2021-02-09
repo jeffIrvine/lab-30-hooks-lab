@@ -17,7 +17,7 @@ export default function App() {
           component = {MainContainer}
         />
         <Route
-          path="/detail/:id"
+          exact path="/detail/:id"
           component = {DetailContainer}
         />
       </Switch>

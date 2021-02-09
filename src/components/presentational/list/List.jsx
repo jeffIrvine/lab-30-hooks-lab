@@ -4,7 +4,7 @@ import Detail from '../detail/Detail';
 import { Link } from 'react-router-dom';
 
 const List = ({ results }) => {
-  const ListElements = results.map((result) => (
+  const ListCard = results.map((result) => (
     <Link key={result.id} to = {`/detail/${result.id}`}>
       <li key={result.id}>
         <Detail
@@ -15,7 +15,7 @@ const List = ({ results }) => {
       </li>
     </Link>
   ));
-  return <ul data-testId="results">{ListElements}</ul>;
+  return <ul data-testid="results">{ListCard}</ul>;
 };
 
 List.propTypes = {
